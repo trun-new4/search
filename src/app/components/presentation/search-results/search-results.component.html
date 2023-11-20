@@ -1,0 +1,15 @@
+<div class="search-results" *ngIf="config?.results">
+  <h2>{{ config.totalResults}} Results For "{{ config.searchTerm }}"</h2>
+  <div class="search-results__container">
+
+    <table width="100%" class="search-results__table">
+      <tr *ngFor="let result of config?.results?.items" (click)="onSelect(result)"
+      class="search-results__table__row">
+      <td>{{ result.title }} </td>
+      <td>{{ result.company_status }} </td>
+      <td>{{ result.company_number }} </td>
+      <td>{{ result.description_identifier }} {{ result.date_of_creation }}</td>
+      </tr>
+    </table>
+  </div>
+</div>

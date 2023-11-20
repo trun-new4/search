@@ -1,0 +1,21 @@
+.company-officers {
+    h1 {
+        margin-bottom: 0;
+    }
+}
+
+.company-officers__officers {
+    display: block;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.company-officers__officer {
+    display: inline-flex;
+    flex-grow: 1;
+    align-items: flex-start;
+    margin-right: 1rem;
+    width: 20rem;
+    height: 20rem;;
+    border: 0.1rem solid grey;
+}

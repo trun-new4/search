@@ -1,0 +1,44 @@
+.search-input {
+
+  margin-bottom: 2rem;
+  padding-bottom: 3rem;
+  border-bottom: 0.1rem solid gray;
+}
+
+/* Todo - general theme styles and make button and input UX components 
+
+- for demo - some styles here */
+.search-input__input {
+  display: inline-flex;
+  position: relative;
+  input {
+    display: block;
+    box-sizing: border-box;
+    height: 3rem;
+    width: 30rem;
+    line-height: 2rem;
+    padding: 0 1rem;
+  }
+  button {
+    display: block;
+    box-sizing: border-box;
+    height: 3rem;
+    margin-left: -1px;
+    line-height: 1rem;
+    mat-icon {
+     transform: scale(0.8);
+    }
+  }
+}
+
+.search-input__results {
+  position: absolute;
+  left: 0;
+  top: 2.9rem;
+  background-color: white;
+  padding: 2rem;
+  width: 25.8rem; /* Todo - percentages based on view */
+  height: 10rem;
+  overflow-y: auto;
+  border: 0.1rem solid grey;
+}
