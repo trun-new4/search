@@ -1,0 +1,11 @@
+.search-results {
+  padding-top: 1rem;
+}
+
+.search-results__table__row {
+  cursor: pointer;
+}
+
+.search-results__table__row:hover {
+  background-color: ghostwhite;
+}

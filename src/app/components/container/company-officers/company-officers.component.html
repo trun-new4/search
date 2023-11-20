@@ -1,0 +1,23 @@
+
+<!-- TODO - move this html into an 'Officers' component -->
+<div class="company-officers">
+<h1>{{ company?.title}} ({{ companyNumber }})</h1>
+<p>
+
+        {{ company.address?.premises }} {{ company.address?.address_line_1 }},
+        {{ company.address?.address_line_2 }}, {{ company.address?.locality }}, {{ company.address?.country }}. {{ company.address?.postal_code }}
+        
+</p>
+<h2>Officers ({{officersCount}})</h2>
+
+<div  class="company-officers__officers"></div>
+    <div *ngFor="let officer of companyOfficers.items" class="company-officers__officer">
+        <app-officer [config]="{
+            name: officer.name,
+            appointed: officer.appointed_on,
+            role: officer.role,
+            address: address(officer)
+        }"></app-officer>
+    </div>
+    <p>TODO: Add AuthGuard to this view</p>
+</div>
